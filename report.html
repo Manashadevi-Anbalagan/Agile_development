@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Report Issue</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        Smart Campus
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+        <a href="/report">Report Issue</a>
+        <a href="/dashboard">Dashboard</a>
+
+    </div>
+
+</nav>
+
+
+<div class="page-container">
+
+    <div class="form-card">
+
+        <div class="form-header">
+
+            <span class="badge">NEW REPORT</span>
+
+            <h1>Report a Campus Issue</h1>
+
+            <p>
+                Provide the details below to report a problem.
+            </p>
+
+        </div>
+
+
+        <form method="POST">
+
+            <label>Issue Title</label>
+
+            <input
+                type="text"
+                name="title"
+                placeholder="Example: Wi-Fi not working"
+                required
+            >
+
+
+            <label>Category</label>
+
+            <select name="category" required>
+
+                <option value="">Select Category</option>
+
+                <option value="Electricity">Electricity</option>
+                <option value="Water">Water</option>
+                <option value="Wi-Fi">Wi-Fi</option>
+                <option value="Cleanliness">Cleanliness</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Classroom">Classroom</option>
+                <option value="Laboratory">Laboratory</option>
+                <option value="Transport">Transport</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+
+            <label>Location</label>
+
+            <input
+                type="text"
+                name="location"
+                placeholder="Example: CSE Block - Lab 2"
+                required
+            >
+
+
+            <label>Description</label>
+
+            <textarea
+                name="description"
+                rows="5"
+                placeholder="Describe the problem..."
+                required
+            ></textarea>
+
+
+            <button type="submit" class="submit-btn">
+                Submit Issue
+            </button>
+
+        </form>
+
+
+        <a href="/" class="back-link">
+            ? Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

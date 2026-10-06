@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Campus Issue Tracker</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        Smart Campus
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/report">Report Issue</a>
+        <a href="/dashboard">Dashboard</a>
+    </div>
+
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">KCET SMART CAMPUS</span>
+
+        <h1>
+            Smart Campus<br>
+            <span>Issue Tracker</span>
+        </h1>
+
+        <p>
+            Report campus problems, track their progress,
+            and help create a better learning environment.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/report" class="primary-btn">
+                Report an Issue
+            </a>
+
+            <a href="/dashboard" class="secondary-btn">
+                View Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <h2>How It Works</h2>
+
+    <p class="section-subtitle">
+        A simple way to manage campus issues
+    </p>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <div class="icon">REPORT</div>
+            <h3>Report</h3>
+            <p>
+                Students and staff can quickly report
+                problems around the campus.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <div class="icon">TRACK</div>
+            <h3>Track</h3>
+            <p>
+                Monitor the current status of every
+                reported issue.
+            </p>
+        </div>
+
+
+        <div class="feature-card">
+            <div class="icon">SOLVE</div>
+            <h3>Resolve</h3>
+            <p>
+                Administrators can update issues and
+                mark them as resolved.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        Smart Campus Issue Tracker - 2026
+    </p>
+
+</footer>
+
+</body>
+</html>
